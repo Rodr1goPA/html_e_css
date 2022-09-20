@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+*{
+    background-image: linear-gradient(to bottom, #05299E, #95F9E3 );
+    background-attachment: fixed; 
+}
+img{
+    border-radius: 90px;
+}
+
