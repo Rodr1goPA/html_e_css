@@ -5,6 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        fieldset{
+            width: 500px;
+            background-color: floralwhite;
+            box-shadow: 0px 0px 5px darkgray;
+            border-radius: 10px;
+        }
+        legend{
+            font-size: 1.5em;
+            text-shadow: 0px 0px 5px darkgrey;
+        }
+    </style>
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
@@ -12,16 +27,16 @@
         <fieldset>
             <legend>Dados pessoais</legend>
             <p>
-                <label for="inome">Nome</label>
-                <input type="text" name="nome" id="inome" autocomplete="name" required maxlength="30">
+                <label for="inome">Nome</label><br>
+                <input type="text" name="nome" id="inome" autocomplete="name" required maxlength="30" placeholder="Nome completo">
             </p>
             <p>
-                <label for="iemail">E-mail</label>
-                <input type="email" name="email" id="iemail" autocomplete="email" required>
+                <label for="iemail">E-mail</label><br>
+                <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="exemplo@email.com">
             </p>
             <p>
-                <label for="itel">Telefone</label>
-                <input type="tel" name="tel" id="itel" autocomplete="tel" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+                <label for="itel">Telefone</label><br>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" required placeholder="(xx)xxxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
             </p>
         </fieldset>
         <!--Estudar mais sobre RegEx para entender melhor os parametros usados no pattern-->
