@@ -19,6 +19,10 @@ TV: minimo 1200px
     body{
         background-image: url(../imagens/back-tablet.jpg);
     }
+    main{
+        width: 600px;
+        background-color: rgba(0, 0, 0, 0.418);
+    }
     img#phone{display: none;}
     img#tablet{display: block;}
     img#print{display: none;}
